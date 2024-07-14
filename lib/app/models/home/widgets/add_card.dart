@@ -92,9 +92,9 @@ class AddCard extends StatelessWidget {
                           color: color,
                         );
                         Get.back();
-                        homeController.addTask(task);
-                        EasyLoading.showSuccess('Create success');
-                        
+                        homeController.addTask(task)
+                            ? EasyLoading.showSuccess('Create success')
+                            : EasyLoading.showError('Duplicated');
                       }
                     },
                     style: ElevatedButton.styleFrom(
