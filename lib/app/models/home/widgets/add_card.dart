@@ -68,8 +68,9 @@ class AddCard extends StatelessWidget {
                                 selected:
                                     homeController.chipIndex.value == index,
                                 onSelected: (bool selected) {
-                                  homeController.chipIndex.value =
-                                      selected ? index : 0;
+                                  homeController.chipIndex.value = selected
+                                      ? index
+                                      : 0;
                                 },
                               );
                             }),
